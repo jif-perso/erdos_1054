@@ -1,0 +1,155 @@
+{
+  "check": "all",
+  "results": [
+    {
+  "check": "small-bq",
+  "range": [6, 10000000],
+  "maxB": 1000,
+  "exceptionHandledSeparately": {
+    "n": 7,
+    "m": 4,
+    "prefix": [1, 2, 4]
+  },
+  "markedCount": 9999994,
+  "maxSeenB": 627,
+  "examples": [
+      {
+        "n": 6,
+        "B": 1,
+        "q": 5,
+        "slope": 1,
+        "sigma": 1
+      },
+      {
+        "n": 8,
+        "B": 1,
+        "q": 7,
+        "slope": 1,
+        "sigma": 1
+      },
+      {
+        "n": 12,
+        "B": 1,
+        "q": 11,
+        "slope": 1,
+        "sigma": 1
+      },
+      {
+        "n": 14,
+        "B": 1,
+        "q": 13,
+        "slope": 1,
+        "sigma": 1
+      },
+      {
+        "n": 18,
+        "B": 1,
+        "q": 17,
+        "slope": 1,
+        "sigma": 1
+      }
+  ],
+  "ok": true
+},
+    {
+  "check": "first-window",
+  "M": 10000,
+  "X": 99000000,
+  "seedCount": 94,
+  "seedPrimeRange": [10007, 10883],
+  "assertedSeedInterval": [469615, 480503],
+  "longestSeedInterval": [469615, 511269],
+  "primeCountInWindow": 5705894,
+  "largestPrime": 98999987,
+  "primeSumInterval": ["469615", "273803744799153"],
+  "targetInterval": ["469616", "273803744799154"],
+  "ok": true
+},
+    {
+  "check": "large-seed",
+  "M": 20000000,
+  "margin": 2000000,
+  "primeWindow": [20000001, 39999999],
+  "interval": [105000000, 156000000],
+  "inclusiveWidth": 51000001,
+  "firstPrimeAboveM": 20000003,
+  "nextPrimeAfter2M": 40000003,
+  "startsOverlapInduction": true,
+  "example": {
+    "n": 105000000,
+    "primes": [20000081, 32499919, 20000171, 32499829]
+  },
+  "ok": true
+},
+    {
+  "check": "large-bridge",
+  "M": 20000000,
+  "X": 399000000000000,
+  "protectedWindow": true,
+  "seedPrimeSumInterval": [105000000, 156000000],
+  "seedWidth": 51000001,
+  "firstPrimeAfter2M": 40000003,
+  "firstOverlapHolds": true,
+  "overlapInvariant": "first overlap checked here; subsequent overlaps follow from Bertrand's postulate",
+  "lowerBoundForSumPrimesIn2MToX": "1111351202532220892280000000",
+  "targetInterval": ["105000001", "1111351202532220892436000001"],
+  "helfgottStart": "1000000000000000000100000000",
+  "overlapsHelfgottRange": true,
+  "blockRatio": 3,
+  "blockCount": 15,
+  "firstBlocks": [
+    {
+      "a": 40000000,
+      "b": 120000000,
+      "countLower": 3580581,
+      "contribution": "143223240000000"
+    },
+    {
+      "a": 120000000,
+      "b": 360000000,
+      "countLower": 10174759,
+      "contribution": "1220971080000000"
+    },
+    {
+      "a": 360000000,
+      "b": 1080000000,
+      "countLower": 28987282,
+      "contribution": "10435421520000000"
+    }
+  ],
+  "lastBlocks": [
+    {
+      "a": 21257640000000,
+      "b": 63772920000000,
+      "countLower": 1136908891755,
+      "contribution": "24167999933726758200000000"
+    },
+    {
+      "a": 63772920000000,
+      "b": 191318760000000,
+      "countLower": 3299793533771,
+      "contribution": "210437469045695281320000000"
+    },
+    {
+      "a": 191318760000000,
+      "b": 399000000000000,
+      "countLower": 4566229889709,
+      "contribution": "873605440374062640840000000"
+    }
+  ],
+  "ok": true
+},
+    {
+  "check": "tail",
+  "helfgottWeightedLowerBound": 0.0002443,
+  "smallCoordinateBoundWithC30000": 0.0001779711859310516,
+  "repeatedCoordinateRatioAt1e27": 0.0000000000000000000011888316036652967,
+  "totalBadUpperBoundAt1e27": 0.0001779711859310516,
+  "evenTailProductLowerRatioAt1e27": 287474008552985.75,
+  "oddTailSlackAtStart": 92456445.63703209,
+  "ellLessThanPLeftMargin": 268083013520518300000,
+  "ok": true
+}
+  ],
+  "ok": true
+}

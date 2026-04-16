@@ -19,16 +19,16 @@ The other elementary ingredient is the interval-extension trick. If subset sums 
 
 The verifier checks:
 
-1. A direct $Bq$ divisor-prefix search covers every $6\le n\le10{,}000{,}000$, except $7$. The remaining value is $7=1+2+4$, represented by $m=4$.
+1. A direct $Bq$ divisor-prefix search covers every $6\le n\le10\,000\,000$, except $7$. The remaining value is $7=1+2+4$, represented by $m=4$.
 
-2. A first prime-window certificate with $M=10{,}000$ and $X=99{,}000{,}000<M^2$ gives representations for every $469{,}616\le n\le 273{,}803{,}744{,}799{,}154$.
+2. A first prime-window certificate with $M=10\,000$ and $X=99\,000\,000<M^2$ gives representations for every $469\,616\le n\le 273\,803\,744\,799\,154$.
 
-3. A larger seed proves every integer in $[105{,}000{,}000,156{,}000{,}000]$ is a sum of distinct primes in $(20{,}000{,}000,40{,}000{,}000)$. The seed length is $51{,}000{,}001$, while the next prime after $40{,}000{,}000$ is $40{,}000{,}003$, so the interval-extension induction starts. Bertrand's postulate continues it: once a prime $p$ has been adjoined, the interval length is at least $2p$, and the next prime is $<2p$.
+3. A larger seed proves every integer in $[105\,000\,000,156\,000\,000]$ is a sum of distinct primes in $(20\,000\,000,40\,000\,000)$. The seed length is $51\,000\,001$, while the next prime after $40\,000\,000$ is $40\,000\,003$, so the interval-extension induction starts. Bertrand's postulate continues it: once a prime $p$ has been adjoined, the interval length is at least $2p$, and the next prime is $<2p$.
 
-Using Rosser-Schoenfeld bounds for $\pi(x)$, the verifier lower-bounds the prime mass up to $X=399{,}000{,}000{,}000{,}000<20{,}000{,}000^2$. This gives representations for every
+Using Rosser-Schoenfeld bounds for $\pi(x)$, the verifier lower-bounds the prime mass up to $X=399\,000\,000\,000\,000<20\,000\,000^2$. This gives representations for every
 $$
-105{,}000{,}001\le n\le
-1{,}111{,}351{,}202{,}532{,}220{,}892{,}436{,}000{,}001.
+105\,000\,001\le n\le
+1\,111\,351\,202\,532\,220\,892\,436\,000\,001.
 $$
 
 4. For the tail, I use an explicit consequence of Helfgott's ternary Goldbach proof: every odd $N\ge 10^{27}$ is a sum of three distinct odd primes, each $>N/(30000\log N)$. The constants come from Helfgott's Section 7; the verifier checks the numerical margins used to discard triples with a small or repeated coordinate.
@@ -39,9 +39,9 @@ For odd $n$, choose a prime $60000\log n<\ell<120000\log n$, and write $n-1-\ell
 
 The covered intervals are:
 
-- $[6,10{,}000{,}000]$,
-- $[469{,}616,273{,}803{,}744{,}799{,}154]$,
-- $[105{,}000{,}001, 1{,}111{,}351{,}202{,}532{,}220{,}892{,}436{,}000{,}001]$,
+- $[6,10\,000\,000]$,
+- $[469\,616,273\,803\,744\,799\,154]$,
+- $[105\,000\,001, 1\,111\,351\,202\,532\,220\,892\,436\,000\,001]$,
 - $[10^{27}+10^8,\infty)$.
 
 They overlap, so every $n\ge6$ is represented.

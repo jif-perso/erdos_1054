@@ -2,10 +2,10 @@
 
 This repository supports an answer to [Erdos Problem 1054](https://www.erdosproblems.com/1054) on the Erdos Problems website.
 
-I think the remaining well-definedness issue can be closed. The verifier is the single Rust file [`scripts/verify.rs`](scripts/verify.rs). A sample full run is committed as [`output.json`](output.json).
+I think the remaining well-definedness issue can be closed. The verifier is the single Rust file [`verify.rs`](verify.rs). A sample full run is committed as [`output.json`](output.json).
 
 ```sh
-rustc -O scripts/verify.rs -o /tmp/erdos_1054_verify
+rustc -O verify.rs -o /tmp/erdos_1054_verify
 /tmp/erdos_1054_verify all
 ```
 

@@ -25,11 +25,7 @@ The verifier checks:
 
 3. A larger seed proves every integer in $[105000000,156000000]$ is a sum of distinct primes in $(20000000,40000000)$. The seed length is $51000001$, while the next prime after $40000000$ is $40000003$, so the interval-extension induction starts. Bertrand's postulate continues it: once a prime $p$ has been adjoined, the interval length is at least $2p$, and the next prime is $<2p$.
 
-Using Rosser-Schoenfeld bounds for $\pi(x)$, the verifier lower-bounds the prime mass up to $X=399000000000000<20000000^2$. This gives representations for every
-$$
-105000001\le n\le
-1111351202532220892436000001.
-$$
+Using Rosser-Schoenfeld bounds for $\pi(x)$, the verifier lower-bounds the prime mass up to $X=399000000000000<20000000^2$. This gives representations for every $105000001\le n\le 1111351202532220892436000001$
 
 4. For the tail, I use an explicit consequence of Helfgott's ternary Goldbach proof: every odd $N\ge 10^{27}$ is a sum of three distinct odd primes, each $>N/(30000\log N)$. The constants come from Helfgott's Section 7; the verifier checks the numerical margins used to discard triples with a small or repeated coordinate.
 
